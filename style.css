@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.wrap {
+    width: 36rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+    margin: 2rem 0;
+}
+
+.result span {
+    padding: 0rem 1rem;
+    line-height: 5rem;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 1.6rem;
+}
+
+.result button {
+    border: none;
+    outline: none;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    background-color: #ddd;
+    border-radius: 0 .5rem .5rem 0;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 5rem;
+    background-color: #b84592;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+    transition: 0.1s;
+}
+
+.copyOkay {
+    animation: copygoBack 2s ease-in-out;
+}
+
+@keyframes copygoBack {
+    from { 
+        background-color: #00FF00;
+        color: #fff;
+    }
+
+    to { 
+        background-color: #ddd;
+    }
+}
